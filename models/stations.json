@@ -1,0 +1,13 @@
+{
+  "file": "./models/stations.json",
+  "stations": [
+    {
+      "title": "fsdf",
+      "_id": "cd437e5c-dd41-4014-9c36-07ac088e4c6b"
+    },
+    {
+      "title": "grwrgreg",
+      "_id": "792d5975-2610-4adb-9d7d-351574205c98"
+    }
+  ]
+}

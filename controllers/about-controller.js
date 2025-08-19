@@ -6,4 +6,11 @@ export const aboutController = {
     console.log("about rendering");
     response.render("about-view", viewData);
   },
+  async addStation(request, response) {
+    const newStation = {
+      title: request.body.title,
+    };
+    console.log(`adding station ${newStation.title}`);
+    response.redirect("/dashboard");
+  },
 };

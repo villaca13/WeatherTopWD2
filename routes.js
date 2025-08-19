@@ -14,7 +14,11 @@ router.post("/register", accountsController.register);
 router.post("/authenticate", accountsController.authenticate);
 
 router.get("/dashboard", stationController.index);
+router.get("/dashboard/deletestation/:id", stationController.deleteStation);
 router.post("/dashboard/addStation", stationController.addStation);
+
 router.get("/station/:id", reportController.index);
+router.get("/station/:id/deletereport/:reportid", reportController.deleteReport);
 router.post("/station/:id/addreport", reportController.addReport);
+
 router.get("/about", aboutController.index);

@@ -2,24 +2,39 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "title": "fsdf",
+      "name": "fsdf",
       "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
+      "latitude": 45,
+      "longitude": 52,
       "_id": "cd437e5c-dd41-4014-9c36-07ac088e4c6b"
     },
     {
-      "title": "grwrgreg",
+      "name": "grwrgreg",
       "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
+      "latitude": 45,
+      "longitude": 52,
       "_id": "792d5975-2610-4adb-9d7d-351574205c98"
     },
     {
-      "title": "rrtgrt",
-      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
-      "_id": "0ee75ae8-6127-4bac-afbb-e6171dfc72d5"
+      "name": "dfgrfr",
+      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
+      "latitude": 45,
+      "longitude": 52,
+      "_id": "8d11cfb8-fad3-44ba-9bfc-3ae0450b6e1b"
     },
     {
-      "title": "dfgrfr",
+      "name": "tiago",
       "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
-      "_id": "8d11cfb8-fad3-44ba-9bfc-3ae0450b6e1b"
+      "latitude": 45,
+      "longitude": 52,
+      "_id": "9e0a25d9-a748-496d-bc20-a60e84ebefb3"
+    },
+    {
+      "name": "Gurduras",
+      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
+      "latitude": 52,
+      "longitude": 31,
+      "_id": "c77fd145-d871-43a2-bba0-d8b7bbb97f43"
     }
   ]
 }

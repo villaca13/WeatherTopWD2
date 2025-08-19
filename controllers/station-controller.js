@@ -17,11 +17,21 @@ export const stationController = {
   async addStation(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
     const newStation = {
-      title: request.body.title,
+      name: request.body.name,
       userid: loggedInUser._id,
+      latitude: Number(request.body.latitude),
+      longitude: Number(request.body.longitude),
     };
-    console.log(`adding Station ${newStation.title}`);
+
+    console.log(`adding Station ${newStation.name}`);
     await stationStore.addStation(newStation);
     response.redirect("/dashboard");
   }, 
+  
+  async deleteStation(request, response) {
+    const stationId = request.params.id;
+    console.log(`Deleting Station ${stationId}`);
+    await stationStore.deleteStationById(stationId);
+    response.redirect("/dashboard");
+  },
 };

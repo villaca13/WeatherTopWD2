@@ -54,6 +54,15 @@
       "pressure": 0,
       "_id": "c93ccdd6-382b-44df-818d-f8740a305f3a",
       "stationid": "cd437e5c-dd41-4014-9c36-07ac088e4c6b"
+    },
+    {
+      "code": 52,
+      "temperature": 65,
+      "windSpeed": 63,
+      "windDirection": 52,
+      "pressure": 11,
+      "_id": "6f2dc06c-6522-4894-98ec-a874de0d7b59",
+      "stationid": "0ee75ae8-6127-4bac-afbb-e6171dfc72d5"
     }
   ]
 }

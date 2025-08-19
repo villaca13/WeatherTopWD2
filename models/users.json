@@ -1,0 +1,19 @@
+{
+  "file": "./models/users.json",
+  "users": [
+    {
+      "firstName": "tiago",
+      "lastName": "villaca",
+      "email": "tiagovillaca13@gmail.com",
+      "password": "123456",
+      "_id": "c6b01110-7fa0-4b42-a56b-94ef0316ec80"
+    },
+    {
+      "firstName": "roger",
+      "lastName": "betis",
+      "email": "tiagovillaca14@gmail.com",
+      "password": "654321",
+      "_id": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e"
+    }
+  ]
+}

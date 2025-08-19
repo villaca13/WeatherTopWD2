@@ -3,11 +3,23 @@
   "stations": [
     {
       "title": "fsdf",
+      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
       "_id": "cd437e5c-dd41-4014-9c36-07ac088e4c6b"
     },
     {
       "title": "grwrgreg",
+      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
       "_id": "792d5975-2610-4adb-9d7d-351574205c98"
+    },
+    {
+      "title": "rrtgrt",
+      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
+      "_id": "0ee75ae8-6127-4bac-afbb-e6171dfc72d5"
+    },
+    {
+      "title": "dfgrfr",
+      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
+      "_id": "8d11cfb8-fad3-44ba-9bfc-3ae0450b6e1b"
     }
   ]
 }

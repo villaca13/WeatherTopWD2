@@ -34,6 +34,15 @@ export const reportStore = {
     db.data.reports.splice(index, 1);
     await db.write();
   },
+  
+  async deleteReportsByStationId(id) {
+    await db.read();
+    const listToDelete = db.data.reports.filter((report) => report.stationid === id);
+    for (let rep in listToDelete) {
+        db.data.reports.splice(rep._id, 1);
+    }
+    await db.write();
+  },
 
   async deleteAllReport() {
     db.data.reports = [];

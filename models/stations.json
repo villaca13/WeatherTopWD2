@@ -2,39 +2,18 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "name": "fsdf",
+      "name": "Ams",
+      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
+      "latitude": 45,
+      "longitude": 56,
+      "_id": "4ccc401e-ef98-419b-9ec6-f0ea90c0fd88"
+    },
+    {
+      "name": "Ams",
       "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
-      "latitude": 45,
-      "longitude": 52,
-      "_id": "cd437e5c-dd41-4014-9c36-07ac088e4c6b"
-    },
-    {
-      "name": "grwrgreg",
-      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
-      "latitude": 45,
-      "longitude": 52,
-      "_id": "792d5975-2610-4adb-9d7d-351574205c98"
-    },
-    {
-      "name": "dfgrfr",
-      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
-      "latitude": 45,
-      "longitude": 52,
-      "_id": "8d11cfb8-fad3-44ba-9bfc-3ae0450b6e1b"
-    },
-    {
-      "name": "tiago",
-      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
-      "latitude": 45,
-      "longitude": 52,
-      "_id": "9e0a25d9-a748-496d-bc20-a60e84ebefb3"
-    },
-    {
-      "name": "Gurduras",
-      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
-      "latitude": 52,
-      "longitude": 31,
-      "_id": "c77fd145-d871-43a2-bba0-d8b7bbb97f43"
+      "latitude": 41,
+      "longitude": 54,
+      "_id": "a9ab3bd3-f5bf-4ac6-bc48-164ea4d83e26"
     }
   ]
 }

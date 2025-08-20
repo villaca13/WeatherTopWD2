@@ -29,9 +29,9 @@ export const stationController = {
   }, 
   
   async deleteStation(request, response) {
-    const stationId = request.params.id;
+    const stationId = request.params.stationid;
     console.log(`Deleting Station ${stationId}`);
     await stationStore.deleteStationById(stationId);
-    response.redirect("/dashboard");
+    response.redirect(`/station/${stationId}/deleteallreports`);
   },
 };

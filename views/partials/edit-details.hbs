@@ -1,0 +1,30 @@
+<section class="columns">
+  <div class="column box is-align-content-center ">
+    <h1 class="title">Edit User Details</h1>
+    <form class="box" action="/userdetails/updatedetails" method="POST">
+      <label class="label">Name</label>
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="field">
+            <input class="input" type="text" name="firstName" value={{ loggedInUser.firstName }}>
+          </div>
+          <div class="field">
+            <input class="input" type="text" name="lastName" value={{ loggedInUser.lastName }} >
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Email</label> 
+        <input class="input" type="text" name="email"value={{ loggedInUser.email }} disabled>
+      </div>
+      <div class="field">
+        <label class="label">Password</label> 
+        <input class="input" type="password" name="password"value={{ loggedInUser.password }} >
+      </div>
+      <div class="field is-grouped">
+        <button class="button is-link">  Update 
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

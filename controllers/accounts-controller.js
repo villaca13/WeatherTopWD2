@@ -49,4 +49,19 @@ export const accountsController = {
     const userEmail = request.cookies.station;
     return await userStore.getUserByEmail(userEmail);
   },
+  
+  
+  async updateUser(request, response) {
+    const user = await userStore.getUserByEmail(request.cookies.station);
+    const email = user.email;
+    const updatedUser = {
+      firstName: request.body.firstName,
+      lastName: request.body.lastName,
+      password: request.body.password,
+    };
+    console.log(`Updating user details from ${email}`);
+    await userStore.updateUser(user, updatedUser);
+    response.redirect("/userdetails");
+  },
+  
 };

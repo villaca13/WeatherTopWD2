@@ -4,6 +4,7 @@ import { stationController } from "./controllers/station-controller.js";
 import { aboutController } from "./controllers/about-controller.js";
 import { reportController } from "./controllers/report-controller.js";
 import { userDetailsController } from "./controllers/user-detail-controller.js";
+import { cityListController } from "./controllers/city-list-controller.js";
 
 
 export const router = express.Router();

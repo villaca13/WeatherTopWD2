@@ -1,9 +1,18 @@
 <form class="box" action="/dashboard/addstation" method="POST">
   <div class="field is-horizontal">
     <div class="field-body">
-      <div class="field">
+
+      <div class="field has-addons">
         <label class="label">Name</label>
-        <input class="input" type="text" placeholder="Name" name="name">
+        <div class="control">
+          <input class="input" type="text" placeholder="Find a City">
+        </div>
+      
+        <div class="control">
+          <button class="button is-info">
+            Search
+          </button>
+        </div>
       </div>
       
       <div class="field">
@@ -19,3 +28,15 @@
   </div>
   <button class="button is-link">Add Station</button>
 </form>
+
+<div class="field has-addons">
+  <label class="label">Name</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Find a City">
+  </div>
+  <div class="control">
+    <button class="button is-info">
+      Search
+    </button>
+  </div>
+</div>

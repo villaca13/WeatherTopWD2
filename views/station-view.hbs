@@ -1,7 +1,37 @@
+<script>
+  const data = {
+    labels: [
+      {{#each reading.trendLabels}}
+        "{{this}}",
+      {{/each}}
+    ],
+    datasets: [
+      {
+        name: "Temperature", type: "line",
+        values: [
+          {{#each reading.tempTrend}}
+            {{this}},
+          {{/each}}
+        ]
+      }
+    ]
+  }
+
+  const chart = new frappe.Chart("#chart", {
+    title: "Temperature Trend",
+    data: data,
+    type: 'line',
+    height: 250,
+  })
+</script>
+
 {{> menu active="dashboard"}}
+
 
 <section class="section box">
   {{> weather-bar station=station}} 
+  <div class="box" id="chart"></div>
+
   {{> list-reports}}
   {{> add-report}}
   <form action="/station/{{station._id}}/autoaddreport" method="POST">

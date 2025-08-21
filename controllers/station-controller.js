@@ -11,6 +11,7 @@ export const stationController = {
     const list = await cityStore.getCitiesByName(request.query.name || "Dublin");
     
     const city = await cityStore.getCityByName(request.query.name);
+
     try{
       console.log(`found city ${city.name} `);   
     }
@@ -67,4 +68,5 @@ export const stationController = {
     await stationStore.deleteStationById(stationId);
     response.redirect(`/station/${stationId}/deleteallreports`);
   },
+
 };

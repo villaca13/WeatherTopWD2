@@ -2,13 +2,6 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "name": "Ams",
-      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
-      "latitude": 45,
-      "longitude": 56,
-      "_id": "4ccc401e-ef98-419b-9ec6-f0ea90c0fd88"
-    },
-    {
       "name": "Dublin City",
       "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
       "apiid": 7778677,
@@ -31,6 +24,38 @@
       "latitude": 40.4165,
       "longitude": -3.70256,
       "_id": "78475a6c-69c2-4947-ab3e-989b46e1d85b"
+    },
+    {
+      "name": "Tokyo",
+      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
+      "apiid": 1850147,
+      "latitude": 35.689499,
+      "longitude": 139.691711,
+      "_id": "aa8355bf-326b-4275-bb5e-e55168afdfef"
+    },
+    {
+      "name": "Ushuaia",
+      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
+      "apiid": 3833367,
+      "latitude": -54.799999,
+      "longitude": -68.300003,
+      "_id": "7b6d40e8-f63a-4d8d-910a-d299122d2a4d"
+    },
+    {
+      "name": "Dublin",
+      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
+      "apiid": 5187443,
+      "latitude": 40.371769,
+      "longitude": -75.201561,
+      "_id": "713c18c4-4c59-4119-b004-b7b76b415cd7"
+    },
+    {
+      "name": "Moscow Oblast",
+      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
+      "apiid": 524925,
+      "latitude": 55.75639,
+      "longitude": 37.628334,
+      "_id": "3ff09a5d-da3e-454a-ba19-bd3e015b149f"
     }
   ]
 }

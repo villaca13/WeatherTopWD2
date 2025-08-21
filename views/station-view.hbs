@@ -1,7 +1,7 @@
 {{> menu active="dashboard"}}
 
 <section class="section box">
-  {{> weather-bar name=station.name }}
+  {{> weather-bar station=station}} 
   {{> list-reports}}
   {{> add-report}}
   <form action="/station/{{station._id}}/autoaddreport" method="POST">

@@ -4,7 +4,6 @@ import { stationController } from "./controllers/station-controller.js";
 import { aboutController } from "./controllers/about-controller.js";
 import { reportController } from "./controllers/report-controller.js";
 import { userDetailsController } from "./controllers/user-detail-controller.js";
-import { cityListController } from "./controllers/city-list-controller.js";
 
 
 export const router = express.Router();
@@ -22,7 +21,8 @@ router.post("/userdetails/updatedetails", accountsController.updateUser);
 
 router.get("/dashboard", stationController.index);
 router.get("/dashboard/deletestation/:stationid", stationController.deleteStation);
-router.post("/dashboard/addStation", stationController.addStation);
+router.post("/dashboard/addstation", stationController.addStation);
+router.post("/dashboard/autoaddstation/:apiid", stationController.autoAddStation);
 
 router.get("/station/:stationid", reportController.index);
 router.post("/station/:stationid/addreport", reportController.addReport);

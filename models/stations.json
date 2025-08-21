@@ -9,32 +9,28 @@
       "_id": "4ccc401e-ef98-419b-9ec6-f0ea90c0fd88"
     },
     {
-      "name": "Ams",
+      "name": "Dublin City",
       "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
-      "latitude": 41,
-      "longitude": 54,
-      "_id": "a9ab3bd3-f5bf-4ac6-bc48-164ea4d83e26"
+      "apiid": 7778677,
+      "latitude": 53.355122,
+      "longitude": -6.24922,
+      "_id": "170293ef-52b5-47d6-9850-75dec3bf9af3"
     },
     {
-      "name": "sdf",
+      "name": "Belo Horizonte",
       "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
-      "latitude": 0,
-      "longitude": 0,
-      "_id": "9b053500-b3b9-4e08-9c73-627cef6e64f0"
+      "apiid": 3405825,
+      "latitude": -5.3,
+      "longitude": -52.866669,
+      "_id": "c269d203-e1cb-4e27-b392-627871ab3c66"
     },
     {
-      "name": "dublin",
+      "name": "Madrid",
       "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
-      "latitude": 0,
-      "longitude": 0,
-      "_id": "922f467d-1a31-4cd0-85e4-c9c3e835ad8f"
-    },
-    {
-      "name": "dublin",
-      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
-      "latitude": 0,
-      "longitude": 0,
-      "_id": "76896113-d490-4d4e-9007-3a9bd3017813"
+      "apiid": 3117735,
+      "latitude": 40.4165,
+      "longitude": -3.70256,
+      "_id": "78475a6c-69c2-4947-ab3e-989b46e1d85b"
     }
   ]
 }

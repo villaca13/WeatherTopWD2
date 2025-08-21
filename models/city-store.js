@@ -11,7 +11,7 @@ export const cityStore = {
 
   async getCityById(id) {
     await db.read();
-    const list = db.data.cities.find((city) => city.id === id);
+    const list = db.data.cities.find((city) =>  city.id == id);
     return list;
   },
 
@@ -21,9 +21,17 @@ export const cityStore = {
     return list;
   },
 
-  async getCitiesByCountry(country) {
+  async getCitiesByName(name) {
     await db.read();
-    return db.data.cities.filter((city) => city.country === country);
+    const list = db.data.cities.filter((city) => String(city.name).slice(0,name.length).toLowerCase() === String(name).toLowerCase());
+    return list;
   },
+
+  async getCityByApiId(apiId) {
+    await db.read();
+    const list = db.data.cities.find((city) => parseInt(city.id) === parseInt(apiId));
+    return list;
+  },
+
 
 };

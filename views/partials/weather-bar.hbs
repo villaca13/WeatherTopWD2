@@ -1,12 +1,13 @@
 
 <div class="columns">
 <!-- Location card -->
+
   <div class="column">
     <div class="card has-background-black has-text-white">
         <div class="card-content">
             <div class="media">
                 <div class="media-content">
-                    <p class="title is-4 has-text-white">{{name}}</p>
+                    <p class="title is-4 has-text-white">{{name}} {{station.name}}</p>
                 </div>
                 <div class="media-left">
                     <figure class="image is-48x48">
@@ -15,8 +16,9 @@
                 </div>
             </div>
             <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-            iaculis mauris.   
+              <p>Api Id: {{apiid}} {{station.apiid}} </p>
+              <p>Latitude: {{latitude}} {{station.latitude}}</p>
+              <p>Longitude: {{longitude}} {{station.longitude}}</p>
             </div>
         </div>
     </div>   

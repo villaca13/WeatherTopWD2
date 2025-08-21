@@ -2,126 +2,6 @@
   "file": "./models/reports.json",
   "reports": [
     {
-      "date": "2025-08-21 11:15:29.29",
-      "code": 803,
-      "temperature": 16.76,
-      "windSpeed": 3.09,
-      "pressure": 1020,
-      "windDirection": 30,
-      "_id": "b7242f90-c8d8-48f6-897d-2a2b8e3d4dad",
-      "stationid": "76896113-d490-4d4e-9007-3a9bd3017813"
-    },
-    {
-      "date": "2025-08-21 11:15:46.46",
-      "code": 800,
-      "temperature": 16.66,
-      "windSpeed": 1.54,
-      "pressure": 1013,
-      "windDirection": 60,
-      "_id": "18a65f20-6096-473c-81ef-6c4d503fc5ac",
-      "stationid": "76896113-d490-4d4e-9007-3a9bd3017813"
-    },
-    {
-      "date": "2025-08-21 18:29:39.39",
-      "code": 802,
-      "temperature": 291.6,
-      "windSpeed": 3.09,
-      "pressure": 1021,
-      "windDirection": 110,
-      "_id": "53bbdf9f-813c-400e-a3c8-15890cf1dee2",
-      "stationid": "170293ef-52b5-47d6-9850-75dec3bf9af3"
-    },
-    {
-      "date": "2025-08-21 18:29:43.43",
-      "code": 802,
-      "temperature": 291.6,
-      "windSpeed": 3.09,
-      "pressure": 1021,
-      "windDirection": 110,
-      "_id": "73acb12d-9702-48b1-9085-eac0d2d728ad",
-      "stationid": "170293ef-52b5-47d6-9850-75dec3bf9af3"
-    },
-    {
-      "date": "2025-08-21 18:29:47.47",
-      "code": 802,
-      "temperature": 291.6,
-      "windSpeed": 3.09,
-      "pressure": 1021,
-      "windDirection": 110,
-      "_id": "cb0f02cb-5bc7-4e98-997b-14dcad7978cb",
-      "stationid": "170293ef-52b5-47d6-9850-75dec3bf9af3"
-    },
-    {
-      "date": "2025-08-21 18:29:59.59",
-      "code": 800,
-      "temperature": 310.59,
-      "windSpeed": 2.31,
-      "pressure": 1009,
-      "windDirection": 100,
-      "_id": "509b7246-5476-467d-b174-749cdfa579e1",
-      "stationid": "c269d203-e1cb-4e27-b392-627871ab3c66"
-    },
-    {
-      "date": "2025-08-21 18:30:01.01",
-      "code": 800,
-      "temperature": 310.59,
-      "windSpeed": 2.31,
-      "pressure": 1009,
-      "windDirection": 100,
-      "_id": "9bee1e34-81fe-4f6f-9937-36637ef0eafe",
-      "stationid": "c269d203-e1cb-4e27-b392-627871ab3c66"
-    },
-    {
-      "date": "2025-08-21 18:30:18.18",
-      "code": 800,
-      "temperature": 301.34,
-      "windSpeed": 2.06,
-      "pressure": 1012,
-      "windDirection": 130,
-      "_id": "2aa5593b-f163-4059-8efe-514dad1503c8",
-      "stationid": "78475a6c-69c2-4947-ab3e-989b46e1d85b"
-    },
-    {
-      "date": "2025-08-21 18:30:23.23",
-      "code": 800,
-      "temperature": 301.34,
-      "windSpeed": 2.06,
-      "pressure": 1012,
-      "windDirection": 130,
-      "_id": "e2872ab5-1945-443f-a317-08793e08d7ad",
-      "stationid": "78475a6c-69c2-4947-ab3e-989b46e1d85b"
-    },
-    {
-      "date": "2025-08-21 18:30:26.26",
-      "code": 800,
-      "temperature": 301.34,
-      "windSpeed": 2.06,
-      "pressure": 1012,
-      "windDirection": 130,
-      "_id": "ade9e869-6aa5-43a1-a317-180b904e3f1e",
-      "stationid": "78475a6c-69c2-4947-ab3e-989b46e1d85b"
-    },
-    {
-      "date": "2025-08-21 18:31:30.30",
-      "code": 800,
-      "temperature": 301.86,
-      "windSpeed": 2.57,
-      "pressure": 1010,
-      "windDirection": 160,
-      "_id": "e810c7d9-9f3c-4804-ac9e-da244679ca6b",
-      "stationid": "aa8355bf-326b-4275-bb5e-e55168afdfef"
-    },
-    {
-      "date": "2025-08-21 18:32:26.26",
-      "code": 802,
-      "temperature": 278.96,
-      "windSpeed": 2.06,
-      "pressure": 991,
-      "windDirection": 190,
-      "_id": "58a696a6-b840-44a4-952e-9e6417ee9d42",
-      "stationid": "7b6d40e8-f63a-4d8d-910a-d299122d2a4d"
-    },
-    {
       "date": "2025-08-21 18:33:54.54",
       "code": 802,
       "temperature": 278.96,
@@ -260,6 +140,26 @@
       "pressure": 0,
       "_id": "89605689-0a6b-4740-a925-19686151215f",
       "stationid": "3ff09a5d-da3e-454a-ba19-bd3e015b149f"
+    },
+    {
+      "date": "2025-08-21 22:32:22.22",
+      "code": 804,
+      "temperature": 33.9,
+      "windSpeed": 5.91,
+      "pressure": 1002,
+      "windDirection": 177,
+      "_id": "6d529a82-e78a-4812-abd5-0dc25c914749",
+      "stationid": "30592309-1dd3-467f-a3b1-6b04277247ba"
+    },
+    {
+      "date": "2025-08-21 22:32:28.28",
+      "code": 804,
+      "temperature": 33.9,
+      "windSpeed": 5.91,
+      "pressure": 1002,
+      "windDirection": 177,
+      "_id": "5569fd7b-c575-4267-91e5-82a76b81b60b",
+      "stationid": "30592309-1dd3-467f-a3b1-6b04277247ba"
     }
   ]
 }

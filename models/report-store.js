@@ -3,7 +3,6 @@ import { initStore } from "../utils/store-utils.js";
 
 const db = initStore("reports");
 
-
 export const reportStore = {
   async getAllReport() {
     await db.read();

@@ -1,3 +1,17 @@
+
+{{> menu active="dashboard"}}
+
+<section class="section box">
+  {{> weather-bar station=station}} 
+  <div class="box" id="chart"></div>
+
+  {{> list-reports}}
+  {{> add-report}}
+  <form action="/station/{{station._id}}/autoaddreport" method="POST">
+    <button class="button is-primary">Auto Generate Reading</button>
+  </form>
+</section>
+
 <script>
   const data = {
     labels: [
@@ -16,7 +30,7 @@
       }
     ]
   }
-
+  // Create the chart
   const chart = new frappe.Chart("#chart", {
     title: "Temperature Trend",
     data: data,
@@ -24,17 +38,3 @@
     height: 250,
   })
 </script>
-
-{{> menu active="dashboard"}}
-
-
-<section class="section box">
-  {{> weather-bar station=station}} 
-  <div class="box" id="chart"></div>
-
-  {{> list-reports}}
-  {{> add-report}}
-  <form action="/station/{{station._id}}/autoaddreport" method="POST">
-    <button class="button is-primary">Auto Generate Reading</button>
-  </form>
-</section>

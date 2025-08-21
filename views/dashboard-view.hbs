@@ -3,11 +3,32 @@
 <section class="section">
   
   {{> list-stations}}
+
+  <div class="box" style="width: 1200px; height: 600px " id="map"></div>
   
   {{> add-station }}
 
   {{> list-cities}}
 
 </section>
+<script>
 
+var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+});
 
+var osmHOT = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team hosted by OpenStreetMap France'});
+
+var map = L.map('map', {
+    center: [53, -6],
+    zoom: 6,
+    layers: [osm, osmHOT]
+});
+
+{{#each stations}}
+L.marker([{{this.latitude}} , {{this.longitude}}]).addTo(map);
+{{/each}}
+</script>

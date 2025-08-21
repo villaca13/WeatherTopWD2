@@ -42,20 +42,36 @@
       "_id": "7b6d40e8-f63a-4d8d-910a-d299122d2a4d"
     },
     {
-      "name": "Dublin",
+      "name": "Londres",
       "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
-      "apiid": 5187443,
-      "latitude": 40.371769,
-      "longitude": -75.201561,
-      "_id": "713c18c4-4c59-4119-b004-b7b76b415cd7"
+      "apiid": 3846616,
+      "latitude": -27.71439,
+      "longitude": -67.133492,
+      "_id": "2eb9af0c-4660-461e-85ad-3e4cbe227d3a"
     },
     {
-      "name": "Moscow Oblast",
+      "name": "Dublin City",
       "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
-      "apiid": 524925,
-      "latitude": 55.75639,
-      "longitude": 37.628334,
-      "_id": "3ff09a5d-da3e-454a-ba19-bd3e015b149f"
+      "apiid": 7778677,
+      "latitude": 53.355122,
+      "longitude": -6.24922,
+      "_id": "3dc1db39-d8ac-4f2f-a542-45914a2dd001"
+    },
+    {
+      "name": "Belo Horizonte",
+      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
+      "apiid": 3405825,
+      "latitude": -5.3,
+      "longitude": -52.866669,
+      "_id": "1d0a5403-5903-412e-a9a2-5368b276f493"
+    },
+    {
+      "name": "Dubai",
+      "userid": "c6b01110-7fa0-4b42-a56b-94ef0316ec80",
+      "apiid": 292224,
+      "latitude": 25,
+      "longitude": 55.333328,
+      "_id": "30592309-1dd3-467f-a3b1-6b04277247ba"
     }
   ]
 }

@@ -2,6 +2,7 @@ import { stationStore } from "../models/station-store.js";
 import { reportStore } from "../models/report-store.js";
 import dayjs from "dayjs";
 import axios from "axios";
+
 const apiKey = "56c1c127b3dd8b1ed7bc54e7e6cbd7b2";
 
 export const reportController = {
@@ -54,7 +55,7 @@ export const reportController = {
     const viewData = {
       title: "Station",
       station: station,
-      readings: report,
+      reading: report,
     };
     response.render("station-view", viewData);
   },

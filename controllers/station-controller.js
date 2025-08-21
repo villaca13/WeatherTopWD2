@@ -7,11 +7,11 @@ export const stationController = {
   
   async index(request, response) {
     const loggedInUser = await accountsController.getLoggedInUser(request);
-    const list = await cityStore.getCitiesByCountry("IE");
+    const list = await cityStore.getCitiesByCountry ("BR");
     const viewData = {
       title: "Station Dashboard",
       stations: await stationStore.getStationsByUserId(loggedInUser._id),
-      cities: list,
+      cities: list.slice(0, 10), // Limit to 10 cities for display
     };
     console.log("dashboard rendering");
     response.render("dashboard-view", viewData);

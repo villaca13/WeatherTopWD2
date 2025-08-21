@@ -1,10 +1,10 @@
-{{> menu}}
+{{> menu active="dashboard"}}
 
-<section class="section">
-  <div class="title">
-    {{station.title}}
-  </div>
-  {{> weather-bar }}
+<section class="section box">
+  {{> weather-bar name=station.name }}
   {{> list-reports}}
   {{> add-report}}
+  <form action="/station/{{station._id}}/autoaddreport" method="POST">
+    <button class="button is-primary">Auto Generate Reading</button>
+  </form>
 </section>

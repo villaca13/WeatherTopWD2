@@ -14,6 +14,13 @@
       "email": "tiagovillaca14@gmail.com",
       "password": "654321",
       "_id": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e"
+    },
+    {
+      "firstName": "Jose",
+      "lastName": "chixo",
+      "email": "tiagovillaca15@gmail.com",
+      "password": "741852",
+      "_id": "b2008c34-53d0-40ae-96e0-89cec0f1ecd2"
     }
   ]
 }

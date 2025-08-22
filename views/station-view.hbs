@@ -13,6 +13,8 @@
 </section>
 
 <script>
+  document.getElementById('mainSubtitle').innerHTML = "{{station.name}} - {{station.country}}  Station";
+ 
   const data = {
     labels: [
       {{#each reading.trendLabels}}

@@ -2,28 +2,22 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "name": "Santiago",
-      "userid": "b2008c34-53d0-40ae-96e0-89cec0f1ecd2",
-      "apiid": "1687800",
-      "latitude": 17.2939,
-      "longitude": 120.444901,
-      "_id": "acdf7736-c116-4031-92d2-cfb032603c16"
-    },
-    {
       "name": "Buenos Aires",
       "userid": "b2008c34-53d0-40ae-96e0-89cec0f1ecd2",
+      "country": "AR",
       "apiid": 3435907,
       "latitude": -36,
       "longitude": -60,
-      "_id": "3895074d-0b68-4f3c-85af-415d81cba95a"
+      "_id": "5f94a8de-270f-44d1-82c2-27fa4aeab507"
     },
     {
-      "name": "Londontowne",
-      "userid": "b2008c34-53d0-40ae-96e0-89cec0f1ecd2",
-      "apiid": 4361094,
-      "latitude": 38.933449,
-      "longitude": -76.549408,
-      "_id": "f135785f-689d-4838-b93c-02cbc6266502"
+      "name": "Buenos Aires",
+      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
+      "country": "AR",
+      "apiid": 3435910,
+      "latitude": -34.613152,
+      "longitude": -58.377232,
+      "_id": "334a058d-61dc-43e5-b4fb-aa44a6784a3a"
     }
   ]
 }

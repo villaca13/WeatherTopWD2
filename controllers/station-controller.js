@@ -1,6 +1,9 @@
 import { accountsController } from "./accounts-controller.js";
 import { stationStore } from "../models/station-store.js";
 import { cityStore } from "../models/city-store.js";
+import axios from "axios";
+
+const apiKey = "56c1c127b3dd8b1ed7bc54e7e6cbd7b2";
 
 
 export const stationController = {
@@ -13,6 +16,28 @@ export const stationController = {
     const city = await cityStore.getCityByName(request.query.name);
 
     const stations = await stationStore.getStationsByUserId(loggedInUser._id);
+
+    let weatherResult = {};
+    let weatherRequestUrlByApiId = {};
+    let weatherRequestUrlByName = {};
+
+    for (let station of stations) {
+    weatherRequestUrlByApiId = `https://api.openweathermap.org/data/2.5/weather?id=${station.apiid}&units=metric&appid=${apiKey}`;
+    weatherRequestUrlByName = `https://api.openweathermap.org/data/2.5/weather?id=${station.name}&units=metric&appid=${apiKey}`;
+      
+      try {
+        weatherResult = await axios.get(weatherRequestUrlByApiId);
+        }
+      catch{
+        weatherResult = await axios.get(weatherRequestUrlByName);
+      }
+      console.log("Requesting weather data from OpenWeatherMap API for Station " + station.name + " with API ID " + station.apiid);
+      if (weatherResult.status == 200) {
+        station.currentWeather = weatherResult.data;
+        station.weatherCondition = weatherResult.data.weather[0];
+      }
+  
+    }
 
     stations.sort((a, b) => a.name.localeCompare(b.name));
 
@@ -38,6 +63,7 @@ export const stationController = {
     const newStation = {
       name: request.body.name,
       userid: loggedInUser._id,
+      country: request.body.country,
       apiid: request.body.apiid,
       latitude: Number(request.body.latitude),
       longitude: Number(request.body.longitude),
@@ -55,6 +81,7 @@ export const stationController = {
     const newStation = {
       name: cityDetails.name,
       userid: loggedInUser._id,
+      country: cityDetails.country,
       apiid: cityDetails.id,
       latitude: Number(cityDetails.coord.lat),
       longitude: Number(cityDetails.coord.lon),

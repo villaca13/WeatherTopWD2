@@ -5,6 +5,7 @@ import axios from "axios";
 
 const apiKey = "56c1c127b3dd8b1ed7bc54e7e6cbd7b2";
 
+
 export const reportController = {
   async index(request, response) {
     const station = await stationStore.getStationById(request.params.stationid);
@@ -56,6 +57,8 @@ export const reportController = {
       title: "Station",
       station: station,
       reading: report,
+      currentWeather: weatherResult.data,
+      weatherCondition: weatherResult.data.weather[0],
     };
     response.render("station-view", viewData);
   },

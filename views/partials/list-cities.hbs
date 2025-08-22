@@ -7,7 +7,7 @@
     <div class="column is-narrow">   
       <div class="card">
         <header class="card-header">
-          <p class="card-header-title"> {{name}} </p>
+          <p class="card-header-title"> {{name}} {{country}} </p>
           <button class="card-header-icon" aria-label="more options">
             <span class="icon">
               <i class="fas fa-angle-down" aria-hidden="true"></i>
@@ -21,9 +21,9 @@
               <p>Longitude: {{coord.lon}}</p>
           </div>
         </div>
-        <footer class="card-footer">
-          <form action="/dashboard/autoaddstation/{{id}}" method="POST">
-            <button class="card-footer-item"> Auto Add Station</button>
+        <footer class="card-footer"> 
+          <form class="card-footer-item" action="/dashboard/autoaddstation/{{id}}" method="POST">
+            <button class="button is-info"> Auto Add Station</button>
           </form>
         </footer>
       </div> 

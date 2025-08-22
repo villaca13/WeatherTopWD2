@@ -18,6 +18,24 @@
       "latitude": -34.613152,
       "longitude": -58.377232,
       "_id": "334a058d-61dc-43e5-b4fb-aa44a6784a3a"
+    },
+    {
+      "name": "Dublin City",
+      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
+      "country": "IE",
+      "apiid": 7778677,
+      "latitude": 53.355122,
+      "longitude": -6.24922,
+      "_id": "4c564817-35b8-4a11-9f5f-077c1a585fd4"
+    },
+    {
+      "name": "Belo Horizonte",
+      "userid": "40ce1a09-7aa8-4c58-a4cd-98bb04d4036e",
+      "country": "BR",
+      "apiid": 3405825,
+      "latitude": -5.3,
+      "longitude": -52.866669,
+      "_id": "0fe1a941-4d14-4e58-b746-c7138fa933d2"
     }
   ]
 }

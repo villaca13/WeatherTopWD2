@@ -1,5 +1,5 @@
 
-# Whether Weather Website
+# Weather Top
 
 ## Overview
 Developed for the higher diploma in computer science at SETU. using Node js, JavaScript, HTML, Bulma (CSS framework) and Handlebars js.
@@ -45,7 +45,7 @@ Website is deployed through Render and can be found here: [Whether Top](https://
 - **Frontend**: HTML, JavaScript, BULMA (CSS Framework), Node, handlebars
 - **Backend**: Render for hosting
 - **Database**: Local Server, JSON.
-- **Architecture**: MCV - Model,View,Controller.
+- **Architecture**: Model–view–controller (MVC).
 - **API**: OpenWeather, Leaflet maps, Frappe Charts.
 
 ---
@@ -114,12 +114,12 @@ WhetherWeather202501/
 
 - [w3schools](https://www.w3schools.com) to search uses and examples for HTML tags and JavaScript.
 - [Bulma CSS Framework](https://bulma.io/) styles for navigation bar, checkboxes, table, boxes, cards and etc.
-- [andrewborstein.com](https://andrewborstein.com/blog/moving-my-blog-to-eleventy-part-2/) used to solve this continuous deployment error between Github and Netlify when using 11ty [eleventy not found"](https://answers.netlify.com/t/eleventy-non-zero-exit-code-127-error/66900) 
-- [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/JavaScript) used to search uses exemples for Java Script.
-- [freecodecamp](https://www.freecodecamp.org/news/javascript-refresh-page-how-to-reload-a-page-in-js/) - code for reloading a page in Java Script.
-- Weather icons from [flaticon](https://www.flaticon.com/).
+- [Frappe charts](https://frappe.io/charts/docs) API to add charts to the webpage.
+- [Leafletjs Maps](https://leafletjs.com/) API to add maps with layers to webpage. 
+- [Open Weather](https://openweathermap.org/current) API to get weather information.
+- [Iconfy](https://iconify.design/) Where the icons are from.
+- [Extract Max/Min function from json file](https://stackoverflow.com/questions/69479035/how-to-find-the-min-max-of-values-in-an-array-of-json-objects-javascript) function to get max/min values of an array of jason objects.
 - Readme template from [comp1800](https://github.com/comp1800/web_template).
-- Instructions to export git commit history [adamthebig](https://gist.github.com/adamthebig/9d2cf1281797c3f9f958#file-git-commit-log-sh)
 
 ---
 

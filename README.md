@@ -2,63 +2,60 @@
 # Whether Weather Website
 
 ## Overview
-Developed for the higher diploma in computer science at SETU. using JavaScript, HTML, and Bulma (CSS framework).
-Website is deployed through Netlify and can be found here: [Whether Weather](https://whetherweathervillaca.netlify.app/).
-- JavaScript: Model–view–controller (MVC), Arrays, methods, events, Object-oriented programming (OOP), URL Parameters, APIs, Data handling.
+Developed for the higher diploma in computer science at SETU. using Node js, JavaScript, HTML, Bulma (CSS framework) and Handlebars js.
+Website is deployed through Render and can be found here: [Whether Top](https://weathertopwd2.onrender.com).
+
+- JavaScript: Node, Arrays, methods, events, Object-oriented programming (OOP), URL Parameters, Data handling.
+- Architecture: Model–view–controller (MVC).
 - HTML concepts: use of Divisions, Sections, IDs, Classes, naming of folders and files, and Appropriate use of semantics.
 - Bulma concepts: Columns, Navbar, color palette, form items, table, box, card.  
-- Nunjucks concepts: templating, layouts, partials, DRY/WET. 
-- Site Generator: Eleventy. 
-- Deployment: Netlify.
+- HandleBars concepts: templating, layouts, partials, DRY/WET.  
+- Deployment: Render.
+- API`s: OpenWeather, Leaflet maps, Frappe Charts.
 
 ---
 
 ## Features
-- 3 HTML pages:  Dashboard, City focus, and Settings.
-- Navigation bar/burger (Bulma framework)
-1. ***Dashboard***
-    -  9 Cities available, and click on the city card to go to the city focus and see details about the weather
-2. ***City Focus***
-    - Hourly forecast for the next 6 or 12 hours from the current hour of the current day
-    - City location map embedded 
-    - 7 Days forecast - Click on the day card to get more details about that specific day 
-    - Day weather details - It changes according to the day card you click on. 
-3. ***Settings***
-    - City checkboxes: enable/disable a city that is shown on the dashboard page 
-    - Preferences
-        1. Button - Reset all preferences: - it will clear up the local storage. 
-        2. Show Map (Default: enabled): hide/show Embedded map on city focus
-        3. Show 12-hour forecast ( Default: enabled): if enabled, show hourly forecast for the next 12 hours, otherwise it shows only 6 hours
-        4. Show Rain (Default: enabled): Show the rain precipitation probability on both the hourly forecast and the daily weather details 
-        5. Show Feels Like (Default: enabled): Show the max feels like temperature on both hourly forecast and day weather details 
-        6. Dark Theme (Default: enabled): Select dark theme for the website; otherwise, it is light. 
-
-4. ***WEBSITE hidden functions below:***
-    - CITIES selected on the settings page are stored in the local storage and loaded on the next access.
-    - PREFERENCES selected on the settings page are stored in the local storage and loaded on the next access.
-    - LAST SEEN CITY is saved in the local storage and loaded on the next access.
-    - DEFAULT CITY is the first one in the list. 
+- pages:  About, Dashboard, Station view, User Details, Log in, Sign up.
+- Navigation bar (Bulma framework)
+1. ***Sign up***
+    - Create a new account
+2. ***Log in***
+    - Log in your account
+3. ***Dashboard***
+    - STATIONS: List of stations added and ordered alphabetically. it can be open or deleted. give information about the current weather and Min/Max of the records.
+    - MAP: map with station markers showing where in the world is being tracked. 
+    - ADD/SEARCH(EXTRA) STATION: Station can be added manually if the details are entered. Extra funcionality is added to search a certain location in a list of cities. If there is an exact match, form is populated with the first value found.
+    - (EXTRA) AVAILABLE STATIONS - AUTO ADD STATION: After using search, a list of cities is returned from the query and bacome available to auto add if needed.  
+4. ***Dashboard/Station View***
+    - WEATHER STATION: give information about the current weather and Min/Max of the records.
+    - TREND TEMPERATURE: give information about the trend temperature for the following hours of the day.  
+    - RECORDS: list of records added.
+    - ADD RECORD: records can be added manually or deleted by clicking on the icons/button.
+    - AUTO GENERATING READING: API is used to get the current weather information about certain location and saved in the database as a new record.
+5. ***About***
+    - Company details   
+6. ***User Details***
+    - VIEW/EDIT User Details: Details can be amended. EMAIL CANNOT be changed.
 
 ---
 
 ## Technologies Used
 
-- **Frontend**: HTML, JavaScript, BULMA (CSS Framework), eleventy, Node, Nunjucks 
-- **Backend**: Netlify for hosting
-- **Database**: Localy stored, JSON. 
-- **API**: Not Implemented
+- **Frontend**: HTML, JavaScript, BULMA (CSS Framework), Node, handlebars
+- **Backend**: Render for hosting
+- **Database**: Local Server, JSON.
+- **Architecture**: MCV - Model,View,Controller.
+- **API**: OpenWeather, Leaflet maps, Frappe Charts.
 
 ---
 
 ## Usage
 
-1. Open the command prompt and select the folder where you saved the files. Example: C:\Users\(USER)\WhetherWeather202501
-2. When inside the folder, use the eleventy command below ( [Eleventy](https://www.11ty.dev/docs/) needs to be installed)
-```
-eleventy --serve
-```
-3. Open your browser and visit `http://localhost:8080`.
-4. The home webpage will open and then use the navigation bar to go through the pages. 
+1. Open the command prompt and select the folder where you saved the files. Example: C:\Users\(USER)\WeatherTopWD2
+2. Use npm(node) to install adicional packages like (daysjs, axios and etc..) 
+3. Open your browser and visit `http://localhost:4000`.
+4. The home webpage will open and then use the navigation bar to log in. 
 
 ---
 
@@ -66,12 +63,29 @@ eleventy --serve
 
 ```
 WhetherWeather202501/
-├── _includes/
-│   ├── footer.njk
-│   ├── header.njk
-│   └── mainLayout.njk
-├── _site/
+├── controllers/
+│   ├── about-controller.js
+│   ├── accounts-controller.js
+│   ├── report-controller.js
+│   ├── station-controller.js
+│   └── user-detail-controller.js
 ├── images/
+├── models/
+│   ├── city-store.js
+│   ├── city.list.json
+│   ├── object-store.js
+│   ├── report-store.js
+│   ├── reports.json
+│   ├── station-store.js
+│   ├── stations.json
+│   ├── user-store.js
+│   └── users.json
+├── node_modules/
+├── utils/
+│   └── utils-store.js
+├── views/
+│   ├── layouts/
+│   └── partials/
 ├── js/
 │   ├── components/
 |   |           └── weather-item.js
@@ -80,15 +94,12 @@ WhetherWeather202501/
 │   ├── navbar.js
 │   ├── weather_data.js
 │   └── weatherProject.js
-├── node_modules/
-├── .elenventy.js
-├── cityFocus.njk
-├── GithubCommitHistory.csv
-├── index.njk
+├── .gitignore
 ├── package-lock.json
 ├── package.json
-├── preferences.njk
 ├── README.md
+├── routes.js
+├── server.js
 └── reflection.pdf
 ```
 
@@ -116,17 +127,17 @@ WhetherWeather202501/
 ### Limitations
 
 - Currently, the website is only designed for desktops. 
-- Database is on client side, localy stored and accessed. 
-- Temperature unit is only celcius. 
-- only 7 days forecast.
-- only 9 cities available. 
+- Database is created in json.
+- Passwords are not checked but stored. 
+- Only current weather and no forecast.
+- Website seems to have a slow response time to time and when the dashboard is rendering
 
 
 ### Future Work
 
-- Implement an API to get live data and then add more cities to the website. 
-- Implement fahrenheit (F) unit for temperature. 
-- Improve the website layout and make it more responsive for different screen sizes. 
+- A database in SQL or NONSQL. 
+- Implement Weather Forescast for up to 15 days ahead. 
+- Improvements to the performance.
 - Increase the forecast to 15 days ahead. 
 
 ---

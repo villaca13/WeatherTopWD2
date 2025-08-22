@@ -86,21 +86,13 @@ WhetherWeather202501/
 ├── views/
 │   ├── layouts/
 │   └── partials/
-├── js/
-│   ├── components/
-|   |           └── weather-item.js
-│   ├── data-definition.pdf
-│   ├── generalFunctions.js
-│   ├── navbar.js
-│   ├── weather_data.js
-│   └── weatherProject.js
+|        └── Icons/
 ├── .gitignore
 ├── package-lock.json
 ├── package.json
 ├── README.md
 ├── routes.js
-├── server.js
-└── reflection.pdf
+└── server.js
 ```
 
 ---

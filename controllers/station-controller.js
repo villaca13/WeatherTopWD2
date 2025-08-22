@@ -12,6 +12,10 @@ export const stationController = {
     
     const city = await cityStore.getCityByName(request.query.name);
 
+    const stations = await stationStore.getStationsByUserId(loggedInUser._id);
+
+    stations.sort((a, b) => a.name.localeCompare(b.name));
+
     try{
       console.log(`found city ${city.name} `);   
     }
@@ -21,7 +25,7 @@ export const stationController = {
 
     const viewData = {
       title: "Station Dashboard",
-      stations: await stationStore.getStationsByUserId(loggedInUser._id),
+      stations: stations,
       cities: list,
       city: city || "",
     };

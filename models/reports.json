@@ -1,4 +1,25 @@
 {
   "file": "./models/reports.json",
-  "reports": []
+  "reports": [
+    {
+      "date": "2025-08-22 09:12:35.35",
+      "code": 804,
+      "temperature": 27.56,
+      "windSpeed": 5.64,
+      "pressure": 1007,
+      "windDirection": 190,
+      "_id": "e2245ab9-c10a-40f5-aa36-db9b2e0ab2cd",
+      "stationid": "acdf7736-c116-4031-92d2-cfb032603c16"
+    },
+    {
+      "date": "2025-08-22 09:12:37.37",
+      "code": 804,
+      "temperature": 27.56,
+      "windSpeed": 5.64,
+      "pressure": 1007,
+      "windDirection": 190,
+      "_id": "42fb1653-b7eb-4fc8-98c0-8a2b7f84e682",
+      "stationid": "acdf7736-c116-4031-92d2-cfb032603c16"
+    }
+  ]
 }
